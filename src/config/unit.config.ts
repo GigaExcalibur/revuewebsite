@@ -3,7 +3,7 @@ import { IUnit } from "@dream-of-components/react"
 import { Klaudia, Zero, Josephine, Emerson, Beth } from "@rod/config/playables"
 
 export interface IRoDPlayable extends IUnit {
-	affinity: string,
+	affinity?: string,
 	classDesc: string,
 	fullName?: string,
 	pronouns?: string,

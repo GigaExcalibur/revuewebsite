@@ -3,7 +3,7 @@ export const Josephine: IRoDPlayable = {
 	displayName: 'Josephine',
 	artists: ['meatOfJustice'],
 	class: 'Mage Armor',
-	affinity: 'Wind',
+	//affinity: 'Wind',
 	description: 'Royal knight in service to House Ouahed. To cope with her dashed dreams, her wit spits venom in the verses she composes.',
 	classDesc: 'Refused the traditional weapons of knighthood, claiming weaving spells was the only way to preserve sanity.',
 	fullName: 'Josephine Ventadorn',

@@ -3,7 +3,7 @@ export const Klaudia: IRoDPlayable = {
 	displayName: 'Klaudia',
 	artists: ['zerimagi'],
 	class: 'Gremory',
-	affinity: 'Wind',
+	//affinity: 'Wind',
 	description: 'Heir apparent to House Ouahed: just, driven, and unwavering in her devotion to House Sarka\'s righteous cause.',
 	classDesc: 'To be worthy of House Ouahed\'s magical legacy requires rigorous study of all such schools, bordering on the demonic.',
 	fullName: 'Klaudia el-Ouahed',
