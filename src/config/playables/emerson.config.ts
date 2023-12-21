@@ -6,7 +6,7 @@ export const Emerson: IRoDPlayable = {
 	artists: ['levin'],
 	class: 'Bow Armor',
 	//affinity: 'Light',
-	description: 'Wandering hedge knight currently working in Meraly. Their unusual armaments are a tribute to their martyred parents.',
+	blurb: 'Wandering hedge knight currently working in Meraly. Their unusual armaments are a tribute to their martyred parents.',
 	classDesc: 'Determined to prove them all wrong. For every enemy with an arrow-hole in the chest, their point is made better.',
 	fullName: 'Wesley Emerson',
 	pronouns: 'They/She/He',
