@@ -3,7 +3,7 @@ export const Beth: IRoDPlayable = {
 	displayName: 'Beth',
 	artists: ['xvi'],
 	class: 'Villager',
-	affinity: 'Dark',
+	//affinity: 'Dark',
 	description: 'Young and pragmatic villager looking for a way to move up in the world. Always taught to get her hands dirty if needed.',
 	classDesc: 'The lance itself stood taller than her, but looking at her you\'d know she was liable to slay giants twice her height.',
 	fullName: 'Bethelyn Tiller',
