@@ -1,4 +1,5 @@
 import { IRenderCharacterConfig, IRenderItemConfig, UnitSheet, IUnit, CharacterOverlay} from "@dream-of-components/react";
+import { IRoDPlayable } from "@rod/config";
 
 export default function CharacterDetails({characterConfig, clear}: {
     characterConfig: IRenderCharacterConfig,
