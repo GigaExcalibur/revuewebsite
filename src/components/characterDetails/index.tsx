@@ -1,5 +1,4 @@
-import { IUnit } from "@dream-of-components/react"
-import { CharacterOverlay } from "@dream-of-components/react";
+import { IRenderCharacterConfig, IRenderItemConfig, UnitSheet, IUnit, CharacterOverlay} from "@dream-of-components/react";
 
 export default function CharacterDetails({characterConfig, clear}: {
     characterConfig: IRenderCharacterConfig,
