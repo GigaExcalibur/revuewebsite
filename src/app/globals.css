@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-sm{
+  font-size: 0.8rem;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
+  --lb-char-overlay-bg-color: #b83b66;
 }
 
 @media (prefers-color-scheme: dark) {
