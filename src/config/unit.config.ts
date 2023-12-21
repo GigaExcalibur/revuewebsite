@@ -8,11 +8,12 @@ export interface IRoDPlayable extends IUnit {
 	classDesc: string,
 	fullName?: string,
 	pronouns?: string,
+	height?: string,
 	age?: number | string,
-	hobby: string,
-	birthday: string,
-	promo: string,
-	promoDesc: string,
+	hobby?: string,
+	birthday?: string,
+	promo?: string,
+	promoDesc?: string,
 }
 
 export class RoDRenderCharacter extends RenderCharacter {
