@@ -11,7 +11,7 @@ let characters: RoDRenderCharacter[];
 let spritesheet: { [key: string]: IRenderItemConfig[] } = {};
 let init = false;
 
-export default function characterPage() {
+export default function CharacterPage() {
 
 	if(!init){
 	  characters = RoDCharacterArray.map((character: IUnit) => new RoDRenderCharacter(character, {renderAll: true}));
