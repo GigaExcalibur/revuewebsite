@@ -1,3 +1,5 @@
+import { IRoDPlayable } from "@rod/config"
+
 export const Beth: IRoDPlayable = {
 	name: 'Beth',
 	displayName: 'Beth',
