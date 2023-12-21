@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dream-of-components/react": "^0.0.19",
+    "@dream-of-components/react": "^0.0.21",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

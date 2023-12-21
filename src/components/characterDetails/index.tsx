@@ -7,7 +7,7 @@ export default function CharacterDetails({characterConfig, clear}: {
 	const defaultView = 'test';
 	const validViews = new Set('test');
 	
-	const characterDef: any = characterConfig.unitData; //IUnit = characterConfig.unitData;
+	const characterDef: IUnit = characterConfig.unitData;
 
 	const uiIcons = {
 		dragDrop: () => 'drag',
