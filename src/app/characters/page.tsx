@@ -1,6 +1,6 @@
 'use client';
 
-import { IRenderCharacterConfig, UnitSheet, IUnit} from "@dream-of-components/react";
+import { IRenderCharacterConfig, IRenderItemConfig, UnitSheet, IUnit} from "@dream-of-components/react";
 import { RoDCharacterArray } from "@rod/config"
 import { RoDRenderCharacter } from "@rod/config"
 import { RoDArtistConfig } from "@rod/config"
