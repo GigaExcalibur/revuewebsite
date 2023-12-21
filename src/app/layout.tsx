@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import '@dream-of-components/react/index.esm.css'
+import { RoDArtistConfig } from "@rod/config"
+import { getArtistCreditStyles } from '@dream-of-components/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={getArtistCreditStyles(RoDArtistConfig)}>{children}</body>
     </html>
   )
 }
