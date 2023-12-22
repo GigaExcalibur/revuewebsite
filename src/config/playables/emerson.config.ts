@@ -19,24 +19,24 @@ export const Emerson: IRoDPlayable = {
 	promoDesc: 'Proved them all wrong. Mastery of lances and bows turns them into an all-ranged solo enemy decimator.',
 	recruitment: 'Parados - Auto joins on Turn 1.',
 	stats: {
-		hp: 21,
-		str: 2,
-		int: 7,
-		dex: 5,
-		agi: 6,
-		cha: 4,
-		def: 5,
-		res: 5,
-		bld: 10
+		hp: 25,
+		str: 9,
+		int: 0,
+		dex: 6,
+		agi: 3,
+		cha: 6,
+		def: 8,
+		res: 7,
+		bld: 18
 	},
 	growths: {
 		hp: 63,
-		str: 49,
-		int: 49,
-		dex: 35,
-		agi: 42,
-		cha: 35,
+		str: 56,
+		int: 14,
+		dex: 42,
+		agi: 14,
+		cha: 28,
 		def: 42,
-		res: 28
+		res: 42
 	}
 }
