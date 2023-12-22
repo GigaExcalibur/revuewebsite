@@ -1,8 +1,8 @@
 import { RenderCharacter } from "@dream-of-components/react"
-import { IUnit } from "@dream-of-components/react"
+import { IUnit, IPlayableUnitStats } from "@dream-of-components/react"
 import { Klaudia, Zero, Josephine, Emerson, Beth } from "@rod/config/playables"
 
-export interface IRoDPlayable extends IUnit {
+export interface IRoDPlayable extends IUnit, IPlayableUnitStats {
 	description: string,
 	affinity?: string,
 	classDesc: string,
@@ -12,8 +12,8 @@ export interface IRoDPlayable extends IUnit {
 	age?: number | string,
 	hobby?: string,
 	birthday?: string,
-	promo?: string,
 	promoDesc?: string,
+	recruitment?: string
 }
 
 export class RoDRenderCharacter extends RenderCharacter {
