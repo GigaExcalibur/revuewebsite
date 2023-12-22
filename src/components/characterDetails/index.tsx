@@ -49,7 +49,6 @@ export default function CharacterDetails({characterConfig, clear}: {
 				<p className="center"><u>{characterDef.displayName}</u></p>
 				<p className="font-sm center"><em>{characterDef.description}</em></p>
 				<hr />
-				<br />
 				<p className="font-sm">{characterDef.recruitment}</p>
 			  </div>
 			}
