@@ -38,5 +38,10 @@ export const Klaudia: IRoDPlayable = {
 		cha: 35,
 		def: 42,
 		res: 28
+	},
+	ranks: {
+		anima: 31,
+		light: 31,
+		dark: 31
 	}
 }

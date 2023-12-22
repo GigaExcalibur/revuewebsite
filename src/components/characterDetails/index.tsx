@@ -31,6 +31,7 @@ export default function CharacterDetails({characterConfig, clear}: {
 			promotedLevelCap: 20,
 			disableCapRowDisplay: true,
 			disablePercentageDisplay: true,
+			totalWeaponTypes: ['sword', 'lance', 'axe', 'bow', 'staff', 'anima', 'light', 'dark'],
             uiIcons
         };
 		

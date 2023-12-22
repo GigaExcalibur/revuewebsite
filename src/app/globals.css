@@ -16,10 +16,22 @@ img {
   margin-right: auto;
 }
 
+.lb-averages-controls__levels .lb-averages-controls__level-input-group{
+  width: 88px;
+}
+
+table.lb-averages__table {
+  td, th{
+    font-size: 14px;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
+  --lb-averages-row-label-size: 0.1;
   
   --lb-char-overlay-bg-color: #b83b66;
 }

@@ -16,6 +16,7 @@ export const Zero: IRoDPlayable = {
 	hobby: 'Throwing knives',
 	birthday: 'July 29',
 	recruitment: 'Parados - Auto joins on Turn 1.',
+	promoDesc: 'Light glinted off the blade as it was drawn: a flash of blood, a stolen gem, and a slink back into to the shadows.',
 	stats: {
 		hp: 21,
 		str: 2,
@@ -36,5 +37,9 @@ export const Zero: IRoDPlayable = {
 		cha: 21,
 		def: 35,
 		res: 42
+	},
+	ranks: {
+		sword: 131,
+		dark: 71
 	}
 }

@@ -38,5 +38,8 @@ export const Emerson: IRoDPlayable = {
 		cha: 28,
 		def: 42,
 		res: 42
+	},
+	ranks: {
+		bow: 31
 	}
 }

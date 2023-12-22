@@ -38,5 +38,8 @@ export const Josephine: IRoDPlayable = {
 		cha: 35,
 		def: 49,
 		res: 21
+	},
+	ranks: {
+		light: 31
 	}
 }

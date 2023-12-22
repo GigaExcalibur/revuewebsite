@@ -38,5 +38,8 @@ export const Beth: IRoDPlayable = {
 		cha: 35,
 		def: 42,
 		res: 28
+	},
+	ranks: {
+		lance: 1
 	}
 }
