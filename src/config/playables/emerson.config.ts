@@ -17,7 +17,7 @@ export const Emerson: IRoDPlayable = {
 	birthday: 'September 4',
 	promotesTo: 'Juggernaut',
 	promoDesc: 'Proved them all wrong. Mastery of lances and bows turns them into an all-ranged solo enemy decimator.',
-	recruitment: 'Parados - auto joins on Turn 1.',
+	recruitment: 'Parados - Auto joins on Turn 1.',
 	stats: {
 		hp: 21,
 		str: 2,

@@ -17,7 +17,7 @@ export const Klaudia: IRoDPlayable = {
 	birthday: 'October 27',
 	promotesTo: 'High Gremory',
 	promoDesc: 'The high magister of House Ouahed is a beacon of justice, swift to deliver with mastery of lances and all magic.',
-	recruitment: 'Parados - auto joins on Turn 1.',
+	recruitment: 'Parados - Auto joins on Turn 1.',
 	stats: {
 		hp: 21,
 		str: 2,

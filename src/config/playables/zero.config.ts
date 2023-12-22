@@ -15,7 +15,7 @@ export const Zero: IRoDPlayable = {
 	age: 49,
 	hobby: 'Throwing knives',
 	birthday: 'July 29',
-	recruitment: 'Parados - auto joins on Turn 1.',
+	recruitment: 'Parados - Auto joins on Turn 1.',
 	stats: {
 		hp: 21,
 		str: 2,

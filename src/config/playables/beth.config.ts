@@ -17,7 +17,7 @@ export const Beth: IRoDPlayable = {
 	birthday: 'June 15',
 	promotesTo: 'Starosta',
 	promoDesc: 'Klaudia handed her the cuirass and shook her hand, and at long last her efforts had finally borne fruit.',
-	recruitment: 'Parados - auto joins on Turn 1.',
+	recruitment: 'Parados - Auto joins on Turn 2.',
 	stats: {
 		hp: 21,
 		str: 2,

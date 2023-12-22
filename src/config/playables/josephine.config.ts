@@ -17,7 +17,7 @@ export const Josephine: IRoDPlayable = {
 	birthday: 'January 20',
 	promotesTo: 'Thaumachine',
 	promoDesc: 'Mana coursed the plates, crackling energy searing all nearby, as she lamented that it could be different.',
-	recruitment: 'Parados - auto joins on Turn 1.',
+	recruitment: 'Parados - Auto joins on Turn 1.',
 	stats: {
 		hp: 21,
 		str: 2,
