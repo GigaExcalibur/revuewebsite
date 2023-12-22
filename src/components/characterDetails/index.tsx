@@ -46,8 +46,8 @@ export default function CharacterDetails({characterConfig, clear}: {
 		function renderSideProfile() {
 			  return <div>
 			    <img src={characterDef.path} className="center"/>
-				<p className="center">{characterDef.displayName}</p>
-				<p className="font-sm center">{characterDef.description}</p>
+				<p className="center"><u>{characterDef.displayName}</u></p>
+				<p className="font-sm center"><em>{characterDef.description}</em></p>
 				<hr />
 				<br />
 				<p className="font-sm">{characterDef.recruitment}</p>
@@ -63,11 +63,11 @@ export default function CharacterDetails({characterConfig, clear}: {
                 />
 				{widgetState.showPromotedText? 
 				  <>
-					<p>{characterDef.promotesTo}</p>
-					<p className="font-sm">{characterDef.promoDesc}</p>
+					<p><u>{characterDef.promotesTo}</u></p>
+					<p className="font-sm"><em>{characterDef.promoDesc}</em></p>
 				  </> : <>
-					<p>{characterDef.class}</p>
-					<p className="font-sm">{characterDef.classDesc}</p>
+					<p><u>{characterDef.class}</u></p>
+					<p className="font-sm"><em>{characterDef.classDesc}</em></p>
 				  </>
 				}
 			  </div>
