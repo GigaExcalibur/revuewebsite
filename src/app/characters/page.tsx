@@ -19,10 +19,12 @@ export default function CharacterPage() {
 			player: characters.map((character: RoDRenderCharacter) => {
 			character.currentChapter = {chapter: Number.MAX_SAFE_INTEGER}; // this line will actually trigger the code to parse sh it
 			return character.data; // this line gets the parsed 
+			
 		})
 		};
 	  init = true;
 	}
+	console.log(spritesheet);
 	
 	let activeCharacter: any; 
 

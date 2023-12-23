@@ -1,15 +1,23 @@
 'use client';
 
 import { IRenderCharacterConfig, IRenderItemConfig, UnitSheet, IUnit, CharacterOverlay, PlayerAverages, } from "@dream-of-components/react";
-import { IRoDPlayable, RoDUnpromotedClasses, RoDPromotedClasses } from "@rod/config";
+import { IRoDPlayable, RoDUnpromotedClasses, RoDPromotedClasses, RoDRenderCharacter } from "@rod/config";
 import { useState } from "react";
+import CharacterProfile from "@rod/components/characterDetails"
+
+enum CharacterDetailState {
+    Stat = 'stat',
+    ExtendedProfile = 'profile',
+};
 
 export default function CharacterDetails({characterConfig, clear}: {
     characterConfig: IRenderCharacterConfig,
     clear: () => void
 }) {
-	const defaultView = 'test';
-	const validViews = new Set('test');
+	let defaultView = CharacterDetailState.Stat;
+	const validViews = new Set<string>();
+	validViews.add(CharacterDetailState.Stat);
+	validViews.add(CharacterDetailState.ExtendedProfile)
 	
 	const characterDef: IRoDPlayable = characterConfig.unitData;
 
@@ -54,26 +62,41 @@ export default function CharacterDetails({characterConfig, clear}: {
 			}
 
 		function renderContent(state: string) {
-			return <div>
-				<PlayerAverages
-                    characterDef={characterDef}
-                    config={unitDisplayConfig}
-					onDataChange = {getCurrentLevel}
-                />
-				{widgetState.showPromotedText? 
-				  <>
-					<p><u>{characterDef.promotesTo}</u></p>
-					<p className="font-sm"><em>{characterDef.promoDesc}</em></p>
-				  </> : <>
-					<p><u>{characterDef.class}</u></p>
-					<p className="font-sm"><em>{characterDef.classDesc}</em></p>
-				  </>
-				}
-			  </div>
+			switch(state) {
+				case CharacterDetailState.ExtendedProfile:
+					return <CharacterProfile characterDef={characterDef} />;
+				case CharacterDetailState.Stat:
+					return <div>
+						<PlayerAverages
+							characterDef={characterDef}
+							config={unitDisplayConfig}
+							onDataChange = {getCurrentLevel}
+						/>
+						{widgetState.showPromotedText? 
+						  <>
+							<p><u>{characterDef.promotesTo}</u></p>
+							<p className="font-sm"><em>{characterDef.promoDesc}</em></p>
+						  </> : <>
+							<p><u>{characterDef.class}</u></p>
+							<p className="font-sm"><em>{characterDef.classDesc}</em></p>
+						  </>
+						}
+					  </div>		
+			}
 		}
 
 		function renderTabs(currentState: string, onTabSelect: (selectedState: string) => void) {
-			return '';
+			const getSectionTab = (state: CharacterDetailState, label: string) =>
+				(<li>
+					<button onClick={() => onTabSelect(state)}> {label}</button>
+				</li>);
+			const stats = getSectionTab(CharacterDetailState.Stat, 'Stats');
+			const profile = getSectionTab(CharacterDetailState.ExtendedProfile, 'Profile');
+			
+			return <ul className='flex list-none gap-3'>
+				{stats}
+				{profile}
+			</ul>;
 		}
 	return <CharacterOverlay
 			clear={clear}
